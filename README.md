@@ -1,6 +1,6 @@
 # Tutorial: Correction and analysis of streak camera data with python in JupyerLab
 
-This repository comprises Jupyter Notebook that will help you getting started with the evaluation of streak images via Python.
+This repository comprises Jupyter Notebooks that will help you getting started with the evaluation of streak images via Python.
 
 ## Installation
 
@@ -72,3 +72,4 @@ If it doesn't open automatically have a look at the console ouput for a line sim
 ```
 
 copy the given URL to a browser.
+(WIP)
