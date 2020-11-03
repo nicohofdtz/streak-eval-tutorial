@@ -56,7 +56,7 @@ This package provides the python class that will import and hold the streak came
 Install JupyterLab, Matplotplib
 
 ```
-pip install jupyterlab, matplotlib
+pip install jupyterlab matplotlib numpy pandas json-tricks import-ipynb
 ```
 
 (WIP)
