@@ -21,6 +21,7 @@ git clone https://github.com/nicohofdtz/streak-eval-tutorial.git
 
 ###### Method 1 - Using Pipenv:
 
+Read [here](https://towardsdatascience.com/virtual-environments-for-data-science-running-python-and-jupyter-with-pipenv-c6cb6c44a405) why it's a good idea to use pipenv.
 Having [Pipenv](https://github.com/pypa/pipenv) installed navigate to the project folder and run:
 
 ```
