@@ -27,7 +27,20 @@ Having [Pipenv](https://github.com/pypa/pipenv) installed navigate to the projec
 pipenv install
 ```
 
-This should automatically install all required packages in a virtual environment.
+This automatically installs all required packages in a virtual environment.
+After the installation is finished activate the project's virtual environment:
+
+```
+pipenv shell
+```
+
+Connect the environment to a kernel:
+
+```
+python -m ipykernel install --user --display-name streak-eval-tut-kernel --name streak-eval-tut-kernel
+```
+
+Make sure to select this kernel in JupyterLab.
 
 ###### Method 2 - Manual (global installations):
 
@@ -51,13 +64,7 @@ pip install jupyterlab, matplotlib
 
 #### Running JupyterLab
 
-If using pipenv run
-
-```
-pipenv shell
-```
-
-Then run (if not using pipenv start here):
+Run (when using pipenv run this from inside the shell):
 
 ```
 jupyter lab
