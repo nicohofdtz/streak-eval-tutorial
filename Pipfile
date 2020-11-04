@@ -14,6 +14,7 @@ json-tricks = "*"
 import-ipynb = "*"
 matplotlib = "*"
 ipykernel = "*"
+seaborn = "*"
 
 [requires]
 python_version = "3.8"
