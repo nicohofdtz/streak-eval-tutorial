@@ -1,6 +1,6 @@
 # Tutorial: Correction and analysis of streak camera data with python in JupyterLab
 
-_Note: This README aims to provide help for absolute python/programming novices. If you experience any issues or struggles please report (by creating an issue on GitHub or via email) so we can add the information you were missing._
+_Note: This README aims to provide help for absolute python/programming novices. If you experience any issues or struggles, please report (by creating an issue on GitHub or via email) so we can provide the information you need._
 
 This repository comprises Jupyter Notebooks that will help you to get started with the evaluation of streak images via Python. Code in gray boxes has to through a command-line interface (e.g. cmd on Windows). If you are unfamiliar with the basic concepts of command-line interfaces (especially navigation), read the first two items on [Digital Citizens' _11 basic commands you should know_](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands/)
 
