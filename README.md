@@ -106,3 +106,5 @@ The current kernel can be seen (and changed) on the top right of the notebook.
 ![Screenshot of a notebok in JupyterLab](https://github.com/nicohofdtz/streak-eval-tutorial/blob/main/blob/readme-jupyterlab-actual-kernel.png)  
 A notebook consists of blocks that can be executed step by step. Press Ctrl+Enter to execute the currently selected block or Shift+Enter to execute and advance to the next. The functionality of the blocks is thoroughly explained within the notebook.  
 Feel free to experiment with the code. Take note that variables, functions, graphs etc. persist in memory unless they're explicitly deleted/closed or the kernel is shut down. If you're experiencing issues, try resetting your kernel with the reload button at the top of your notebook.
+
+This project is not yet licenced but licencing it under the terms of the GNU or MIT licence is planned. 
