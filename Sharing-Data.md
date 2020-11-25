@@ -14,21 +14,26 @@ Create a branch and push this branch to a private repository. Then give read-onl
 ### Background
 Different from the well know file hosting services (e.g. Dropbox), your local copy of a git repository is not automatically synchronised with its remote (the copy repository that resides on a server of a git host e.g. GitHub).
 Instead you trigger the sync progress manually with the push and pull commands.
-A repository can have multiple branches. The first branch is called main (or master before mid 2020). A new branch can be created with
-'''
+A repository can have multiple branches. The first branch is called main (or master before mid 2020). 
+Each branch can have a different remote. A new branch is identical to the branch it is branched from (e.g. main).
+(Refer to [What is Git - A Quick Introduction to the Git Version Control System](https://www.youtube.com/watch?v=OqmSzXDrJBk) for a brief introduction into branches.)
+### Detailed solution
+#### Step 1
+Create a private repository on a git hoster (GitHub, Bitbucket) or your institutions Git Server. 
+#### Step 2
+Create a new branch with
+```
 git checkout -b name
-''' 
-The new branch is identical to the branch it is branched from (here main). Any changes to your local repository are now applied to the new branch.
+``` 
+From now on any changes to your local repository will be applied to the new branch.
 You can *checkout* the main branch (or any other existing branch) by
-'''
+```
 git checkout main
-'''
-Each branch can have a different remote. You can add your private repository as the remote newly created branch by
-'''
+```
+#### Step 3
+ Add your private repository as the remote newly created branch by
+```
 git remote add name git@URL
-'''
+```
 You can now push your changes to your private repository and share it with someone else.
 
-### Detailed solution
-####Step 1
-Create a private repos
