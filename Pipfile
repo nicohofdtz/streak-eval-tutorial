@@ -6,9 +6,10 @@ verify_ssl = true
 [dev-packages]
 jupyterlab-code-formatter = "*"
 jupyterlab-git = "*"
+python-language-server = {extras = ["all"], version = "*"}
 
 [packages]
-jupyterlab = "*"
+jupyterlab = ">=2.2,<3.0.0a0"
 streakimage = {git = "https://github.com/nicohofdtz/streakimage"}
 pandas = "*"
 json-tricks = "*"
@@ -17,6 +18,14 @@ matplotlib = "*"
 ipykernel = "*"
 seaborn = "*"
 numpy = "==1.19.3"
+python-language-server = {extras = ["all"], version = "*"}
+black = "*"
+jupyterlab-code-formatter = "*"
+ipympl = "*"
+jupyterlab-git = "*"
 
 [requires]
 python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
