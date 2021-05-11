@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "C:\\Users\\nicoh\\.virtualenvs\\streak-eval-tutorial-nlSsuaSL\\Scripts\\python.exe",
+    "python.linting.pylintEnabled": false,
+    "python.linting.mypyEnabled": true,
+    "python.linting.enabled": true
+}
