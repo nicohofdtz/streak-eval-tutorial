@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 from typing import Tuple
 from copy import deepcopy as dc
-from streakimage import StreakImage
 
 def get_mean(df: pd.DataFrame, ex_vals: list[float]) -> Tuple[float, float]:
     """
@@ -17,7 +16,7 @@ def get_mean(df: pd.DataFrame, ex_vals: list[float]) -> Tuple[float, float]:
     return (val_array.mean(), val_array.std())
 
 
-def find_outliers(img: StreakImage, stdev_factor=4.0, window_size: int = 2, key=None, exclude_nnn=True):
+def find_outliers(df: pd.DataFrame, stdev_factor=4.0, window_size: int = 2, key=None, exclude_nnn=True):
     """
     Finds ouliers and replace them with the mean value of their environment.
 
@@ -29,9 +28,7 @@ def find_outliers(img: StreakImage, stdev_factor=4.0, window_size: int = 2, key=
         stdev_factor (float): The factor for the standard deviation.
         window_size (int): The size of the environment.
     """
-    img_new = dc(img)
-    df = img.data
-    df_new = img_new.data
+    df_new = dc(df)
     xrange = range(0, df.shape[0])
     yrange = range(0, df.shape[1])
     for idx in xrange:
@@ -64,7 +61,7 @@ def find_outliers(img: StreakImage, stdev_factor=4.0, window_size: int = 2, key=
             ):
                 df_new.iloc[idx, col] = env_mean
     
-    return (key, img_new)
+    return (key, df_new)
     
 def find_outliers_mp(args):
     return find_outliers(*args)
